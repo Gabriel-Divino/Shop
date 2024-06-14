@@ -59,8 +59,9 @@ const SetupForm = () => {
   };
 
 export default function AddCard(){
-
-    const stripePromise = loadStripe("pk_test_51PQZji06yrLLPldCWN7vw7racwTaT7N35GFhYBoKzl6IHcf52FuTLmC931KdKXqkVI7Ga7QfnOwe6mn0CUJwl4G100Z4FqnpuH");
+    
+    const public_key = "pk_test_51PQZji06yrLLPldCWN7vw7racwTaT7N35GFhYBoKzl6IHcf52FuTLmC931KdKXqkVI7Ga7QfnOwe6mn0CUJwl4G100Z4FqnpuH" 
+    const stripePromise = loadStripe(public_key);
     const [clientSecret, setClientSecret] = useState("");
     const [visible,setVisible] = useState(false)
 
