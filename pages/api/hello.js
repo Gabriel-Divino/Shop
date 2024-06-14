@@ -1,5 +1,22 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+import { Products } from "../../MongoDB/products"
 
-export default function handler(req, res) {
-  res.status(200).json({ name: 'John Doe' })
+export default async function handler(req, res) {
+
+  const response = {}
+
+  try{
+
+    const products = new Products()
+    await products.startClient()
+    const all_products = await products.getAllProducts()
+    response['list'] = all_products
+    response['status'] = 'ok'
+
+  }catch(e){
+    console.log(e)
+    response['status'] = 'error'
+  }
+
+
+  res.json(response)
 }

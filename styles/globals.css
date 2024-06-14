@@ -5,22 +5,45 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
+/*  Header */
 
-a {
-  color: inherit;
-  text-decoration: none;
+#header a{
+
+  color: white;
+  font-size: 130%;
+  
 }
 
-* {
-  box-sizing: border-box;
+#link_enter{
+  margin-right: 10%;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+#authenticatedButton{
+  margin-right: 10%;
+ 
 }
+
+#authenticatedButton a{
+  color:  black;
+  font-size: 100%;
+}
+
+
+#title{
+  color: white;
+  font-size: 130%;
+  font-weight: bold;
+}
+
+/* Pagina de Login */
+
+#form{
+
+  width: 70%;
+  margin-left: 15%;
+  font-size: 130%;
+  margin-top: 5%;
+
+}
+
+
